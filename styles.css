@@ -86,9 +86,12 @@ nav ul li a {
 }
 
 .contato {
-    background-color: #f8f8f8;
-    padding: 60px 20px;
-    text-align: center;
+  background-color: #f8f8f8;
+  padding: 60px 20px;
+  text-align: center;
+  width: 1500px;             /* define uma largura para o bloco */
+  box-sizing: border-box;   /* para o padding não aumentar a largura */
+  border-radius: 8px;       /* opcional: deixa com cantos arredondados */
 }
 
 .contato h2 {

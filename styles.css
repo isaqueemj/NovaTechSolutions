@@ -108,7 +108,8 @@ nav ul li a {
     padding: 0;
     margin: 0 auto;
     max-width: 500px;
-    width: 100%; /* para ocupar largura total do container, mas limitar a max-width */
+    width: 100%;
+    text-align: center; /* importante para centralizar conteúdo do texto */
 }
 
 .contato ul li {
@@ -116,11 +117,14 @@ nav ul li a {
     margin: 15px 0;
     display: flex;
     align-items: center;
-    justify-content: center; /* centraliza horizontalmente */
+    justify-content: center; /* centraliza conteúdo horizontal */
     gap: 10px;
-    flex-wrap: wrap; /* permite que o texto quebre linha se for muito longo */
-    word-break: break-word; /* força quebra de palavra se precisar */
+    flex-wrap: wrap; /* permite quebra de linha no conteúdo */
+    word-break: break-word; /* evita overflow de palavras grandes */
+    text-align: center; /* centraliza o texto dentro do li */
+    width: 100%; /* importante para ocupar toda a largura possível */
 }
+
 
 .contato a {
     color: #0077cc;
@@ -135,11 +139,15 @@ nav ul li a {
 /* Media query para telas pequenas */
 @media (max-width: 600px) {
     .contato ul {
-        max-width: 100%; /* tira limite de 500px para mobile */
-        padding: 0 10px; /* espaçamento nas laterais */
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    
+    .contato ul li {
+        justify-content: center;
+        width: 100%;
     }
 }
-
 
 footer {
     background-color: #0d47a1;
@@ -151,15 +159,4 @@ footer {
 
 p .descricao {
     text-align: justify;
-}
-
-@media (max-width: 600px) {
-    .contato ul {
-        max-width: 100%;
-        padding: 0 10px; /* opcional para dar espaçamento lateral */
-    }
-}
-
-.contato ul li {
-    word-wrap: break-word;
 }

@@ -85,26 +85,48 @@ nav ul li a {
     text-align: center;
 }
 
-.contato form {
+.contato {
+    background-color: #f8f8f8;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contato p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contato ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.contato ul li {
+    font-size: 1.1em;
+    margin: 15px 0;
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
-.contato input,
-.contato textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.contato a {
+    color: #0077cc;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-.contato button {
-    padding: 10px;
-    background-color: #1976d2;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.contato a:hover {
+    color: #005fa3;
 }
 
 footer {

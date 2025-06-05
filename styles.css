@@ -169,9 +169,8 @@ header img {
   width: 100px;
   height: auto;
   display: block;
-  margin: 15; /* centraliza */
+  margin: 0; /* sem espaço acima, abaixo, nem nas laterais */
 }
-
 .servicos .item {
   background-color: #fff;
   padding: 25px;
@@ -195,4 +194,12 @@ header img {
   .servicos .diferenciais {
     grid-template-columns: 1fr; /* 1 coluna em celulares */
   }
+}
+
+.sobre p {
+    text-align: justify;
+}
+
+#paragrafo-1 {
+    text-align: justify;
 }

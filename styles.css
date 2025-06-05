@@ -160,3 +160,14 @@ footer {
 p .descricao {
     text-align: justify;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+header img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 15; /* centraliza */
+}

@@ -64,11 +64,16 @@ nav ul li a {
 }
 
 .sobre,
-.servicos,
-.contato {
+.servicos {
     padding: 60px 20px;
-    background-color: white;
+    background-color: #f0f4f8; /* tom azul bem claro */
     margin-top: 10px;
+    color: #0d47a1;
+}
+
+.sobre h2,
+.servicos h2 {
+    color: #0d47a1;
 }
 
 .servicos .cards {
@@ -83,23 +88,27 @@ nav ul li a {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    color: #0d47a1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .contato {
-    background-color: #f8f8f8;
+    background-color: #1976d2;
     padding: 60px 20px;
     text-align: center;
+    color: white;
+    margin-bottom: 0;
 }
 
 .contato h2 {
     font-size: 2em;
-    color: #333;
+    color: white;
     margin-bottom: 20px;
 }
 
 .contato p {
     font-size: 1.1em;
-    color: #555;
+    color: #e0e0e0;
     margin-bottom: 30px;
 }
 
@@ -109,7 +118,7 @@ nav ul li a {
     margin: 0 auto;
     max-width: 500px;
     width: 100%;
-    text-align: center; /* importante para centralizar conteúdo do texto */
+    text-align: center;
 }
 
 .contato ul li {
@@ -117,23 +126,22 @@ nav ul li a {
     margin: 15px 0;
     display: flex;
     align-items: center;
-    justify-content: center; /* centraliza conteúdo horizontal */
+    justify-content: center;
     gap: 10px;
-    flex-wrap: wrap; /* permite quebra de linha no conteúdo */
-    word-break: break-word; /* evita overflow de palavras grandes */
-    text-align: center; /* centraliza o texto dentro do li */
-    width: 100%; /* importante para ocupar toda a largura possível */
+    flex-wrap: wrap;
+    word-break: break-word;
+    text-align: center;
+    width: 100%;
 }
 
-
 .contato a {
-    color: #0077cc;
+    color: #bbdefb;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .contato a:hover {
-    color: #005fa3;
+    color: #ffffff;
 }
 
 /* Media query para telas pequenas */
@@ -142,7 +150,7 @@ nav ul li a {
         max-width: 100%;
         padding: 0 10px;
     }
-    
+
     .contato ul li {
         justify-content: center;
         width: 100%;
@@ -154,7 +162,7 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
-    margin-top: 30px;
+    margin-top: 0;
 }
 
 p .descricao {
@@ -162,38 +170,40 @@ p .descricao {
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 header img {
-  width: 100px;
-  height: auto;
-  display: block;
-  margin: 0; /* sem espaço acima, abaixo, nem nas laterais */
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0;
 }
+
 .servicos .item {
-  background-color: #fff;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #e3f2fd;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    color: #0d47a1;
 }
 
 .servicos .diferenciais {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 @media (max-width: 992px) {
-  .servicos .diferenciais {
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas em tablets */
-  }
+    .servicos .diferenciais {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 576px) {
-  .servicos .diferenciais {
-    grid-template-columns: 1fr; /* 1 coluna em celulares */
-  }
+    .servicos .diferenciais {
+        grid-template-columns: 1fr;
+    }
 }
 
 .sobre p {
@@ -202,4 +212,30 @@ header img {
 
 #paragrafo-1 {
     text-align: justify;
+}
+
+.nave {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 40px;
+    background-color: #1565c0;
+    border-radius: 16px;
+    max-width: 1000px;
+    width: 90%;
+    box-shadow: 0 0 15px rgba(18, 210, 249, 0.5);
+    margin: 40px auto; /* CENTRALIZA horizontalmente */
+}
+
+
+.nave img {
+    width: 150px;
+    height: auto;
+}
+
+.frase {
+    font-size: 1.8rem;
+    color: white;
+    white-space: nowrap;
 }

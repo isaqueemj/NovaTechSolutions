@@ -226,8 +226,9 @@ header img {
     width: 90%;
     box-shadow: 0 0 15px rgba(18, 210, 249, 0.5);
     margin: 40px auto; /* CENTRALIZA horizontalmente */
+    flex-wrap: wrap; /* permite quebra de linha */
+    text-align: center; /* centraliza texto quando em coluna */
 }
-
 
 .nave img {
     width: 150px;
@@ -238,4 +239,21 @@ header img {
     font-size: 1.8rem;
     color: white;
     white-space: nowrap;
+}
+
+/* RESPONSIVIDADE PARA CELULAR */
+@media (max-width: 600px) {
+    .nave {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .frase {
+        font-size: 1.4rem;
+        white-space: normal; /* permite quebra de linha no texto */
+    }
+
+    .nave img {
+        width: 120px;
+    }
 }

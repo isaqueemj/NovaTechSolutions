@@ -216,8 +216,10 @@ header img {
 
 .nave {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap; /* permite quebra de linha */
     gap: 20px;
     padding: 20px 40px;
     background-color: #1565c0;
@@ -225,9 +227,8 @@ header img {
     max-width: 1000px;
     width: 90%;
     box-shadow: 0 0 15px rgba(18, 210, 249, 0.5);
-    margin: 40px auto; /* CENTRALIZA horizontalmente */
-    flex-wrap: wrap; /* permite quebra de linha */
-    text-align: center; /* centraliza texto quando em coluna */
+    margin: 40px auto;
+    text-align: center;
 }
 
 .nave img {
@@ -238,22 +239,23 @@ header img {
 .frase {
     font-size: 1.8rem;
     color: white;
-    white-space: nowrap;
+    white-space: normal; /* permite quebra de linha */
+    flex: 1 1 100%; /* ocupa linha inteira se precisar */
 }
 
-/* RESPONSIVIDADE PARA CELULAR */
+/* AJUSTES PARA CELULAR */
 @media (max-width: 600px) {
     .nave {
-        flex-direction: column;
+        flex-direction: column; /* empilha imagem e frase */
         padding: 20px;
+    }
+
+    .nave img {
+        width: 100px;
+        margin-bottom: 10px;
     }
 
     .frase {
         font-size: 1.4rem;
-        white-space: normal; /* permite quebra de linha no texto */
-    }
-
-    .nave img {
-        width: 120px;
     }
 }

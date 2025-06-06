@@ -246,16 +246,18 @@ header img {
 /* AJUSTES PARA CELULAR */
 @media (max-width: 600px) {
     .nave {
-        flex-direction: column; /* empilha imagem e frase */
-        padding: 20px;
+        flex-direction: column;
+        padding: 20px 10px;
+        max-width: 100%;
     }
 
     .nave img {
         width: 100px;
-        margin-bottom: 10px;
     }
 
     .frase {
         font-size: 1.4rem;
+        white-space: normal;
+        width: 100%;
     }
 }
